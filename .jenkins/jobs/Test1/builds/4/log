@@ -1,0 +1,8 @@
+Started by user [8mha:////4KHqsMhVGdwUL1efuxWsoCd1q/h/jdVIaH9ci6edwIQFAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mjenkins
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/Test1
+[Test1] $ /bin/sh -xe /tmp/jenkins1884909874973180753.sh
++ date
+Tue Jun 18 06:01:15 UTC 2019
+Triggering a new build of [8mha:////4Fn4DRyi2z2Uf7L16loTIIZCgIaGDSVZuBMugydHyAyTAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JP2Q1OISI30AYxLC68AAAAA=[0mTest2
+Finished: SUCCESS

@@ -1,0 +1,44 @@
+commit 799f519e051d05f94da2bfafdb97a56c469ee0bf
+tree e92f0143b5fea974c609814397c4f2395d121a32
+parent 792d04377ff507c4b1f626d7ff9f9327a7f826d4
+author Amit Vashist <amitvashist7@gmail.com> 2019-06-18 11:30:08 +0000
+committer Amit Vashist <amitvashist7@gmail.com> 2019-06-18 11:30:08 +0000
+
+    Pipeline-as-code-modified
+
+
+
+:100644 100644 9856976b6c598f4919ed7449ab646087b148a585 822bc069622fdd72264909094b478c96340e7ab1 M	pipeline-as-code/Jenkinsfile
+commit 792d04377ff507c4b1f626d7ff9f9327a7f826d4
+tree bd83a509632d917c24eba03ad6927484b7ad93ec
+parent 2014434d0e7e4ce40316295a8f94bcaaae4dbbbf
+author Amit Vashist <amitvashist7@gmail.com> 2019-06-18 11:23:29 +0000
+committer Amit Vashist <amitvashist7@gmail.com> 2019-06-18 11:23:29 +0000
+
+    Pipeline-as-code
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 9856976b6c598f4919ed7449ab646087b148a585 A	pipeline-as-code/Jenkinsfile
+commit 2014434d0e7e4ce40316295a8f94bcaaae4dbbbf
+tree 7387c12c6e8d079528cb1166ad801301404f1141
+parent 62f653543ffdcd7177bb7288c6c295f131bce92c
+author Amit Vashist <amitvashist7@gmail.com> 2019-06-18 11:04:44 +0000
+committer Amit Vashist <amitvashist7@gmail.com> 2019-06-18 11:04:44 +0000
+
+    Pipeline-Parallel-Jobs
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 8a84a663c47ae8a12e0c6b713434a64dc7cfd007 A	pipeline/parallel-Jobs
+commit 62f653543ffdcd7177bb7288c6c295f131bce92c
+tree 6b732262f061f4f7f6b595b87a268b7e6a32cf47
+parent 37de5cae934155d96411f7d66372e794406c200a
+author Amit Vashist <amitvashist7@gmail.com> 2019-06-18 10:31:40 +0000
+committer Amit Vashist <amitvashist7@gmail.com> 2019-06-18 10:31:40 +0000
+
+    Pipeline-Code-Test-Results
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 3e116bcd6a387d39df98e898f4524b3a91fd3f8c A	pipeline/code-test-results

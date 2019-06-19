@@ -1,0 +1,60 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.32">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec>*/5 * * * *</spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.70">
+    <script>node {
+ 
+ stage(&apos;Pull Git Latest Changes in the Repo&apos;) {
+   git &apos;https://github.com/amitvashist7/jenkins-devops-062019.git&apos;
+}
+   def project_path = &quot;atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/&quot;
+ 
+   dir(project_path) { 
+   stage(&apos;Clean old Packages&apos;) {       
+   sh label: &apos;&apos;, script: &apos;mvn clean&apos;
+   }
+   
+   stage(&apos;Package Build&apos;) {
+   sh label: &apos;&apos;, script: &apos;mvn package&apos;
+   }
+   
+   stage(&apos;Code Quality&apos;) {
+   sh label: &apos;&apos;, script: &apos;mvn verify&apos;
+   }
+   
+ stage(&apos;Parallel Jobs&apos;) 
+ parallel &quot;Code Quality Publish&quot;:{
+   publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: &apos;target/site/jacoco/&apos;, reportFiles: &apos;index.html&apos;, reportName: &apos;Jococo Code Quality Report&apos;, reportTitles: &apos;Code Quality Report&apos;])
+   },
+  &quot;Test Results Publish&quot;: {
+   junit &apos;target/surefire-reports/TEST-*.xml&apos;
+   }
+   
+   
+   stage(&apos;Archive Artifacts&apos;) {
+   archive &apos;target/*.jar&apos;
+   }
+   
+ 
+   
+   }
+    
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

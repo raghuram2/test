@@ -1,0 +1,7 @@
+Started by user [8mha:////4KHqsMhVGdwUL1efuxWsoCd1q/h/jdVIaH9ci6edwIQFAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mjenkins
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/Test1
+[Test1] $ /bin/sh -xe /tmp/jenkins6945267060756278980.sh
++ date
+Tue Jun 18 05:47:55 UTC 2019
+Finished: SUCCESS
